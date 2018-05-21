@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="58dp"
+                android:contentDescription="@string/cover_photo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="116dp"
+                android:layout_height="116dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/empty_profile_picture"
+                app:civ_border_color="@color/colorBackground"
+                app:civ_border_width="3dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/headerMarginBottom"
+            android:layout_marginLeft="@dimen/headerMarginStart"
+            android:layout_marginStart="@dimen/headerMarginStart"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/general_details"
+            android:textColor="@color/colorFont" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/cardMarginEnd"
+            android:layout_marginLeft="@dimen/cardMarginStart"
+            android:layout_marginRight="@dimen/cardMarginEnd"
+            android:layout_marginStart="@dimen/cardMarginStart"
+            app:backgroundTint="#ffffff"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/detailMarginBottom"
+                    android:layout_marginTop="28dp"
+                    android:drawableLeft="@drawable/ic_username"
+                    android:drawablePadding="@dimen/detailDrawablePadding"
+                    android:drawableStart="@drawable/ic_username"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/detailPaddingEnd"
+                    android:paddingLeft="@dimen/detailPaddingStart"
+                    android:paddingRight="@dimen/detailPaddingEnd"
+                    android:paddingStart="@dimen/detailPaddingStart"
+                    android:text="@string/username"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dividerMarginBottom"
+                    android:layout_marginEnd="@dimen/dividerMarginEnd"
+                    android:layout_marginLeft="@dimen/dividerMarginStart"
+                    android:layout_marginRight="@dimen/dividerMarginEnd"
+                    android:layout_marginStart="@dimen/dividerMarginStart"
+                    android:layout_marginTop="@dimen/dividerMarginTop"
+                    android:background="@color/colorDivider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/detailMarginBottom"
+                    android:layout_marginTop="@dimen/detailMarginTop"
+                    android:drawableLeft="@drawable/ic_mail"
+                    android:drawablePadding="@dimen/detailDrawablePadding"
+                    android:drawableStart="@drawable/ic_mail"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/detailPaddingEnd"
+                    android:paddingLeft="@dimen/detailPaddingStart"
+                    android:paddingRight="@dimen/detailPaddingEnd"
+                    android:paddingStart="@dimen/detailPaddingStart"
+                    android:text="@string/email"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dividerMarginBottom"
+                    android:layout_marginEnd="@dimen/dividerMarginEnd"
+                    android:layout_marginLeft="@dimen/dividerMarginStart"
+                    android:layout_marginRight="@dimen/dividerMarginEnd"
+                    android:layout_marginStart="@dimen/dividerMarginStart"
+                    android:layout_marginTop="@dimen/dividerMarginTop"
+                    android:background="@color/colorDivider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/detailMarginBottom"
+                    android:layout_marginTop="@dimen/detailMarginTop"
+                    android:drawableLeft="@drawable/ic_employees"
+                    android:drawablePadding="@dimen/detailDrawablePadding"
+                    android:drawableStart="@drawable/ic_employees"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/detailPaddingEnd"
+                    android:paddingLeft="@dimen/detailPaddingStart"
+                    android:paddingRight="@dimen/detailPaddingEnd"
+                    android:paddingStart="@dimen/detailPaddingStart"
+                    android:text="@string/employees"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dividerMarginBottom"
+                    android:layout_marginEnd="@dimen/dividerMarginEnd"
+                    android:layout_marginLeft="@dimen/dividerMarginStart"
+                    android:layout_marginRight="@dimen/dividerMarginEnd"
+                    android:layout_marginStart="@dimen/dividerMarginStart"
+                    android:layout_marginTop="@dimen/dividerMarginTop"
+                    android:background="@color/colorDivider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="@dimen/detailMarginTop"
+                    android:drawableLeft="@drawable/ic_rating"
+                    android:drawablePadding="@dimen/detailDrawablePadding"
+                    android:drawableStart="@drawable/ic_rating"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/detailPaddingEnd"
+                    android:paddingLeft="@dimen/detailPaddingStart"
+                    android:paddingRight="@dimen/detailPaddingEnd"
+                    android:paddingStart="@dimen/detailPaddingStart"
+                    android:text="@string/rating"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/headerMarginBottom"
+            android:layout_marginLeft="@dimen/headerMarginStart"
+            android:layout_marginStart="@dimen/headerMarginStart"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/badges"
+            android:textColor="@color/colorFont" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="@dimen/cardMarginEnd"
+            android:layout_marginLeft="@dimen/cardMarginStart"
+            android:layout_marginRight="@dimen/cardMarginEnd"
+            android:layout_marginStart="@dimen/cardMarginStart"
+            app:backgroundTint="#ffffff"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/detailMarginBottom"
+                    android:layout_marginTop="28dp"
+                    android:drawableLeft="@drawable/ic_badge"
+                    android:drawablePadding="@dimen/detailDrawablePadding"
+                    android:drawableStart="@drawable/ic_badge"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/detailPaddingEnd"
+                    android:paddingLeft="@dimen/detailPaddingStart"
+                    android:paddingRight="@dimen/detailPaddingEnd"
+                    android:paddingStart="@dimen/detailPaddingStart"
+                    android:text="@string/time_waster"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dividerMarginBottom"
+                    android:layout_marginEnd="@dimen/dividerMarginEnd"
+                    android:layout_marginLeft="@dimen/dividerMarginStart"
+                    android:layout_marginRight="@dimen/dividerMarginEnd"
+                    android:layout_marginStart="@dimen/dividerMarginStart"
+                    android:layout_marginTop="@dimen/dividerMarginTop"
+                    android:background="@color/colorDivider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/detailMarginBottom"
+                    android:layout_marginTop="@dimen/detailMarginTop"
+                    android:drawableLeft="@drawable/ic_badge"
+                    android:drawablePadding="@dimen/detailDrawablePadding"
+                    android:drawableStart="@drawable/ic_badge"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/detailPaddingEnd"
+                    android:paddingLeft="@dimen/detailPaddingStart"
+                    android:paddingRight="@dimen/detailPaddingEnd"
+                    android:paddingStart="@dimen/detailPaddingStart"
+                    android:text="@string/creativity_killer"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dividerMarginBottom"
+                    android:layout_marginEnd="@dimen/dividerMarginEnd"
+                    android:layout_marginLeft="@dimen/dividerMarginStart"
+                    android:layout_marginRight="@dimen/dividerMarginEnd"
+                    android:layout_marginStart="@dimen/dividerMarginStart"
+                    android:layout_marginTop="@dimen/dividerMarginTop"
+                    android:background="@color/colorDivider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="@dimen/detailMarginTop"
+                    android:drawableLeft="@drawable/ic_badge"
+                    android:drawablePadding="@dimen/detailDrawablePadding"
+                    android:drawableStart="@drawable/ic_badge"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/detailPaddingEnd"
+                    android:paddingLeft="@dimen/detailPaddingStart"
+                    android:paddingRight="@dimen/detailPaddingEnd"
+                    android:paddingStart="@dimen/detailPaddingStart"
+                    android:text="@string/zombies_factory"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/see_more"
+                    android:textColor="@color/colorFont"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

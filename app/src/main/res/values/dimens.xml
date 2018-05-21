@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dividerMarginStart">67dp</dimen>
+    <dimen name="dividerMarginEnd">16dp</dimen>
+    <dimen name="dividerMarginBottom">8dp</dimen>
+    <dimen name="dividerMarginTop">8dp</dimen>
+    <dimen name="headerMarginStart">8dp</dimen>
+    <dimen name="headerMarginBottom">6dp</dimen>
+    <dimen name="detailPaddingEnd">0dp</dimen>
+    <dimen name="detailPaddingStart">22dp</dimen>
+    <dimen name="detailMarginTop">12dp</dimen>
+    <dimen name="detailMarginBottom">12dp</dimen>
+    <dimen name="detailDrawablePadding">22dp</dimen>
+    <dimen name="cardMarginEnd">8dp</dimen>
+    <dimen name="cardMarginStart">8dp</dimen>
+</resources>
