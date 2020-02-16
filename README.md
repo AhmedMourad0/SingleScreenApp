@@ -1,7 +1,7 @@
 # Single Screen App
 
 ## Project Overview
-This's a project for the Android Basics Nanodegree Program.
+A single screen app.
 
 ## Screenshots
 
